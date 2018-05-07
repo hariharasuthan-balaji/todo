@@ -1,0 +1,8 @@
+<div class="container">
+        <div>{{input type="text" placeholder="task" value=task}}<button {{action "add" task}}>Add</button></div>
+        <div class="heading"> Pending tasks <button{{action 'clear'}}>Clear</button></div>
+        {{#each tasks as |task index|}}
+            <div>{{index}}.{{task}} <button {{action 'remove' index}}>Remove</button></div>
+        {{/each}}
+</div>
+{{yield}}
