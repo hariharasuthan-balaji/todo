@@ -1,7 +1,8 @@
-<div class="dashboard-r">
+<div class="dashboard-block">
     {{name}}
-    <div id="addBtn" {{action "click"}}>
+    <div class="dashboard__clearAllBtn" {{action "removeAllTasks"}}>
         <p>+</p>
     </div>
-    {{pending-list}}
+    {{search-bar search='search' clearResults='clearResults'}}
+    {{pending-list add='add' remove='remove' clear='clear' remTasks=results task=task}}
 </div>

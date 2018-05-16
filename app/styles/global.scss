@@ -1,0 +1,16 @@
+body {
+    font-family: $font-stack;
+    background: $bg-color-end;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $bg-color, $bg-color-end);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $bg-color, $bg-color-end); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $primary-font-color;
+    margin:0;
+}
+h1{
+    padding-left: 20px;
+    padding-bottom:15px;
+    border-bottom:1px solid $primary-font-color;
+}
+.heading {
+    font-size: 25px;
+}

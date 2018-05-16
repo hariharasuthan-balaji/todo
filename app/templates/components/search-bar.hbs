@@ -1,0 +1,6 @@
+<div class="search-bar-block">
+    {{input class="search-bar-block-item" type="search" placeholder="Search" value=query id='search-bar'}}
+    <button class="search-bar-block-item" {{action search query}} id="search-btn">Search</button>
+    <button class="search-bar-block-item" {{action 'clearResults'}} id="clear-results-btn">Clear results</button>
+</div>
+{{yield}}

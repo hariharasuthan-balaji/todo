@@ -1,0 +1,38 @@
+/*pending list*/
+.list-container{
+    display: flex;
+    :hover {
+        color:black;
+    }
+
+    &--number,
+    &--text,
+    &--btn {
+        border: 1px solid;
+    }
+
+    &--number {
+        width: 20px;
+        text-align: center;
+    }
+
+    &--text {
+        width: 200px;
+        padding-left:10px;
+    }
+}
+.container{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  
+    div {
+        width: 264px;
+        margin-top: 5px;
+    }
+    .container__add-field{
+        width: 212px;
+    }
+}

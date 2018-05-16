@@ -1,8 +1,14 @@
 <div class="container">
-        <div>{{input type="text" placeholder="task" value=task}}<button {{action "add" task}}>Add</button></div>
-        <div class="heading"> Pending tasks <button{{action 'clear'}}>Clear</button></div>
-        {{#each tasks as |task index|}}
-            <div>{{index}}.{{task}} <button {{action 'remove' index}}>Remove</button></div>
+        <!--<div class="list-container heading"> Pending tasks</div>-->
+        <div id="taskField">{{input class='container__add-field' type="text" placeholder="task" value=task}}
+            <button {{action "add" task}}>Add</button>
+        </div>
+        {{#each remTasks as |task index|}}
+            <div class="list-container">
+                <span class="list-container--number">{{add index 1}}</span>
+                <span class="list-container--text">{{task}}</span>
+                <button class="list-container--btn" {{action 'remove' index}}>Done</button>
+            </div>
         {{/each}}
 </div>
 {{yield}}
